@@ -1,0 +1,23 @@
+sudo useradd americio
+(sudo useradd -m username)
+sudo mkhomedir_helper americio
+sudo passwd americio
+
+sudo usermod -aG sudo americio
+
+
+
+sudo apt install python3.10-venv
+python3 -m venv p3-simple-env
+source /p3-simple-env/bin/activate
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade setuptools
+python3 -m pip install --upgrade telethon cryptg pillow
+python3 -m pip install --upgrade python-decouple
+cd /project/path
+vim .env
+TELE_API_ID=27100230
+TELE_API_HASH=2dfc9201690679b4fafaae7ad0188186
+TELE_BOT_TOKEN=5468853432:AAGIdwpLjtNzFt6WkDy2RM91hVi3xYI06jg
+vim main.py
+# paste code
